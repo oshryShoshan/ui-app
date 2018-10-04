@@ -1,0 +1,57 @@
+.messageListItemWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-bottom: 1px solid lightgray;
+  height: 100%;
+}
+
+.itemElements {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 95%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 77%;
+  height: 90%;
+  margin-left: 15px;
+}
+
+.roundImage {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 10%;
+}
+
+.assignee {
+  font-weight: bold;
+}
+
+.time{
+  font-weight: lighter;
+  color: lightgray;
+}
+
+.subject {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  font-size: smaller;
+}
+
+.actionIcon {
+  color: lightgray;
+  margin-right: 5px;
+  cursor: pointer;
+}

@@ -1,0 +1,16 @@
+<div class="actionableListItemWrapper" *ngIf="actionableListItem" (click)="onClick()">
+  <div class="leftSide">
+    <div class="roundInfo">
+      <app-round-info [roundInfoObj]="roundInfoObj"></app-round-info>
+    </div>
+    <div class="content">
+      <span class="title">{{actionableListItem.title}}</span>
+      <i class="fa fa-clock-o {{actionableListItem.remainedTime < 0 ? 'overTime' : 'onTime'}}">
+        <span>{{actionableListItem.remainedTime < 0 ?  (actionableListItem.remainedTime * -1) + ' days delays' : actionableListItem.remainedTime + ' days left'}}</span>
+      </i>
+    </div>
+  </div>
+  <div class="actions">
+    <i class="fa fa-ellipsis-v"></i>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+<div class="activityListItemWrapper">
+  <div class="activityElements">
+    <div class="roundImage">
+      <app-round-image [image]="activityListItemObj.image"></app-round-image>
+      <div class="connectors">
+        <div class="up {{isFirst ? 'hidePipe' : ''}}"></div>
+        <div class="down {{isLast ? 'hidePipe' : ''}}"></div>
+      </div>
+    </div>
+    <div class="content">
+    <span class="activityDetails">{{activityListItemObj.assignee}}
+      <span class="additionalInfo">{{activityListItemObj.activity}}</span>
+      {{activityListItemObj.subject}}
+    </span>
+      <i class="fa fa-clock-o additionalInfo"><span> {{activityListItemObj.timePassedStr}}</span></i>
+    </div>
+  </div>
+</div>

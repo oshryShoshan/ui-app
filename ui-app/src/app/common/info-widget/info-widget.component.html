@@ -1,0 +1,20 @@
+<div class="infoWidgetWrapper">
+  <div class="header">
+    <app-info-widget-header [infoWidgetHeader]="infoWidgetHeader"></app-info-widget-header>
+  </div>
+  <div class="infoBody" [ngSwitch]="infoWidgetObj.infoListType">
+    <div class="listItem" *ngFor="let item of localList; index as i"> <!--; trackBy: getTrackByFn()-->
+      <app-actionable-list-item *ngSwitchCase="_EInfoListType.actionableList"
+                                [actionableListItem]="item">
+      </app-actionable-list-item>
+      <app-message-list-item *ngSwitchCase="_EInfoListType.messageList"
+                             [messageListItemObj]="item">
+      </app-message-list-item>
+      <app-activity-list-item *ngSwitchCase="_EInfoListType.activityList"
+                              [activityListItemObj]="item"
+                              [isFirst]="i == 0"
+                              [isLast]="i == localList.length - 1">
+      </app-activity-list-item>
+    </div>
+  </div>
+</div>

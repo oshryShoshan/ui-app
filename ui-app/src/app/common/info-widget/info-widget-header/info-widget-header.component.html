@@ -1,0 +1,15 @@
+<div class="infoWidgetHeaderWrapper">
+  <div class="widgetName">
+    <span>{{infoWidgetHeader.widgetTitle}}</span>
+  </div>
+  <div class="infoCounters">
+    <div class="infoCounter" *ngIf="infoWidgetHeader.primeRoundInfoObj.display">
+      <app-round-info [roundInfoObj]="infoWidgetHeader.primeRoundInfoObj">
+      </app-round-info>
+    </div>
+    <div class="infoCounter" *ngIf="infoWidgetHeader.secRoundInfoObj.display">
+      <app-round-info [roundInfoObj]="infoWidgetHeader.secRoundInfoObj">
+      </app-round-info>
+    </div>
+  </div>
+</div>

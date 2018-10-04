@@ -1,0 +1,46 @@
+.actionableListItemWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 100%;
+  border-bottom: 1px solid lightgray;
+}
+
+.actionableListItemWrapper .leftSide {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.actionableListItemWrapper .leftSide .roundInfo{
+  width: 40px;
+  height: 40px;
+}
+
+.actionableListItemWrapper .leftSide .content {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  color: black;
+  font-weight: bold;
+}
+.actionableListItemWrapper .leftSide .content .overTime {
+
+  font-size: smaller;
+  color: rgba(250,110,157,0.92);
+}
+
+.actionableListItemWrapper .leftSide .content .onTime {
+
+  font-size: smaller;
+  color: lightgray;
+}
+
+.actionableListItemWrapper .actions i{
+  font-size: xx-large ;
+  color: lightgray;
+}
+

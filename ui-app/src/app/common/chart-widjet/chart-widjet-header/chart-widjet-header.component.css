@@ -1,0 +1,67 @@
+.chartWidgetHeaderWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.chartWidgetHeaderWrapper .title{
+  font-family: sans-serif;
+  font-weight: bold;
+  color: rgba(133,147,176,0.92);
+}
+.chartWidgetHeaderWrapper .listSelector {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid lightgray;
+  height: 25px;
+  border-radius: 12.5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.chartWidgetHeaderWrapper .listSelector .listCurrentInfo {
+  margin-right: 20px;
+  font-family: sans-serif;
+  font-size: x-small;
+}
+
+.chartWidgetHeaderWrapper .listSelector .listCurrentInfo .listSubjectName  {
+  color: lightgray;
+}
+
+.chartWidgetHeaderWrapper .listSelector .listCurrentInfo .selectedListItem {
+  color: black;
+  font-weight: bold;
+}
+
+.chartWidgetHeaderWrapper .listSelector .arrow {
+  color: lightgray;
+}
+
+.chartWidgetHeaderWrapper .listSelector .arrow .dropDown {
+  display: none;
+  position: absolute;
+}
+.chartWidgetHeaderWrapper .listSelector .arrow .dropDown span {
+  padding-left: 5px;
+  padding-right: 5px;
+  height: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: context-menu;
+}
+.chartWidgetHeaderWrapper .listSelector .arrow .dropDown span:hover {
+  background-color: rgba(165,195,255,0.92);
+}
+
+.chartWidgetHeaderWrapper .listSelector .arrow:hover .dropDown {
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+  border: 1px solid lightgray;
+  color: black;
+  font-family: sans-serif;
+  font-size: x-small;
+  min-width: 50px;
+}

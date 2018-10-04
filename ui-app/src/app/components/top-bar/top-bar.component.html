@@ -1,0 +1,18 @@
+<div class="topBarWrapper">
+  <div class="topBarItems">
+    <div class="openLeftMenu">
+      <i _ngcontent-c3="" class="fa {{ isMenuOpened ? 'fa-caret-left' : 'fa-caret-right'}} arrow" (click)="onOpenMenuClicked()"></i>
+      <i _ngcontent-c3="" class="fa fa-bars" (click)="onOpenMenuClicked()"></i>
+    </div>
+    <app-search-component (onSearchClickedEvent)="onSearchClicked()" [isMenuOpened]="isMenuOpened"></app-search-component>
+    <input class="inputButton" type="button" value="+ Add project" (click)="onAddProjectClicked()">
+    <div class="dynamicInfo">
+      <i _ngcontent-c3="" class="fa fa-envelope" (click)="onEnvelopeClicked()"></i>
+      <i _ngcontent-c3="" class="fa fa-bell" (click)="onBellClicked()"></i>
+    </div>
+    <div class="userDetails" (click)="onOpenUserDetailsClicked()">
+      <app-round-image [image]="userImage"></app-round-image>
+      <i _ngcontent-c3="" class="fa {{isUserDetailsOpened ? 'fa-caret-up' : 'fa-caret-down'}}"></i>
+    </div>
+  </div>
+</div>

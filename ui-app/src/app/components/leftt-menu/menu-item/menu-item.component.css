@@ -1,0 +1,34 @@
+.menuItemWrapper {
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.description {
+  margin-left: 10%;
+}
+
+.menuItemWrapper:hover {
+  //border-left: 5px solid rgba(84,144,247,0.92);
+  background-color: rgba(18,33,67,0.92);
+}
+
+.actionName {
+  margin-left: 10px;
+}
+
+i {
+  color: rgba(84,144,247,0.92);
+}
+
+.marker {
+  height: 100%;
+  width: 5px;
+
+}
+
+.menuItemWrapper:hover .marker {
+  background-color: rgba(84,144,247,0.92);
+}

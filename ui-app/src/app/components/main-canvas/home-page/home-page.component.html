@@ -1,0 +1,32 @@
+<div class="homePageWrapper">
+  <div class="greetTitle">
+    <span>Hello {{userName}}!</span>
+  </div>
+  <div class="chartWidgets">
+    <div class="SalesWidget">
+      <app-chart-widjet (onChange)="onSalesWidgetChangedStatusEvent($event)"
+                        [chartWidgetBaseObj]="salesChartWidget"
+                        [chartWidgetDetails]="salesChartWidgetDetails">
+      </app-chart-widjet>
+    </div>
+    <div class="ReportWidget">
+      <app-chart-widjet (onChange)="onReportWidgetChangedStatusEvent($event)"
+                        [chartWidgetBaseObj]="reportChartWidget"
+                        [chartWidgetDetails]="reportChartWidgetDetails">
+      </app-chart-widjet>
+    </div>
+  </div>
+  <div class="infoWidgets">
+    <div class="infoWidgetItem">
+      <app-info-widget [infoWidgetObj]="actionableInfoWidgetObj"></app-info-widget>
+    </div>
+
+    <div class="infoWidgetItem">
+      <app-info-widget [infoWidgetObj]="messageInfoWidgetObj"></app-info-widget>
+    </div>
+
+    <div class="infoWidgetItem">
+      <app-info-widget [infoWidgetObj]="activityInfoWidgetObj"></app-info-widget>
+    </div>
+  </div>
+</div>

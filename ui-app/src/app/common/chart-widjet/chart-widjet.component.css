@@ -1,0 +1,18 @@
+.chartWidgetWrapper {
+  border: 1px solid lightgray;
+  height: 100%;
+  background-color: white;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.chartWidgetWrapper .header{
+  height: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 50px;
+}
+
+.chartWidgetWrapper .chartBody {
+  height: 75%;
+}

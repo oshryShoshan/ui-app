@@ -1,0 +1,22 @@
+.searchWrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+
+}
+
+.searchWrapper i{
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.searchWrapper input{
+  border: none;
+  width: 100%;
+  height: 25px;
+}
+
+.searchWrapper .decrease{
+}

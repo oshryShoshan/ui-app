@@ -1,0 +1,30 @@
+.infoWidgetHeaderWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.infoWidgetHeaderWrapper .widgetName {
+  font-size: larger;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.infoWidgetHeaderWrapper .infoCounters {
+  height: 100%;
+  width: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.infoWidgetHeaderWrapper .infoCounters .infoCounter {
+  height: 40px;
+  width: 40px;
+  margin-left: 10px;
+}

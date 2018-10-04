@@ -1,0 +1,12 @@
+<div class="leftPanelWrapper">
+  <div class="title">
+    <i class="fa fa-circle-o-notch"></i>
+    <span>{{labels.title}}</span>
+  </div>
+
+  <div class="actions">
+    <div *ngFor="let action of actions">
+      <app-menu-item *ngIf="action.isAllowed" [action]="action"></app-menu-item>
+    </div>
+  </div>
+</div>

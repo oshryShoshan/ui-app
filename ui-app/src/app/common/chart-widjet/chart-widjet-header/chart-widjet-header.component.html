@@ -1,0 +1,15 @@
+<div class="chartWidgetHeaderWrapper">
+  <span class="title">{{widgetTitle}}</span>
+  <!--<button mat-button>Click me!</button>-->
+  <div class="listSelector">
+    <div class="listCurrentInfo">
+      <span class="listSubjectName">{{listSubjectName}}: </span>
+      <span class="selectedListItem">{{selectedListItem.name}}</span>
+    </div>
+    <i class="fa {{isMenuOpened ? 'fa-angle-up' : 'fa-angle-down'}} arrow" (mouseover)="isMenuOpened = true" (mouseleave)="isMenuOpened = false">
+      <div class="dropDown">
+        <span *ngFor="let item of listItems" (click)="onListItemChanged(item)">{{item.name}}</span>
+      </div>
+    </i>
+  </div>
+</div>

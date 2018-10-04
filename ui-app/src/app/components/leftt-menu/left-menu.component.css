@@ -1,0 +1,27 @@
+.leftPanelWrapper {
+  background-color: rgba(14,26,53,0.92);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: sans-serif;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 25px;
+  height: 7%;
+}
+
+.title i{
+  margin-right: 10px;
+  font-size: x-large;
+  font-weight: bold;
+  color:rgba(84,144,247,0.92);
+}
+
+.actions {
+  height: 93%;
+}

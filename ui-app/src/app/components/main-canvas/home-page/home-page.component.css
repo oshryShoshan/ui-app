@@ -1,0 +1,42 @@
+.homePageWrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.greetTitle {
+  font-size: x-large;
+  font-weight: bold;
+  font-family: sans-serif;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chartWidgets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 35%;
+}
+
+.chartWidgets .SalesWidget{
+  width: 39%;
+}
+
+.chartWidgets .ReportWidget{
+  width: 59%;
+}
+
+.infoWidgets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 45%;
+  margin-top: 25px;
+}
+.infoWidgets .infoWidgetItem {
+  width: 32%;
+  height: 100%;
+}

@@ -1,0 +1,25 @@
+.appComponentWrapper{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+}
+
+.permanentElements{
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  min-width: 88%;
+}
+
+app-top-bar{
+  height: 7%;
+  border-bottom: 1px solid lightgray;
+}
+
+app-main-canvas{
+  height: 93%;
+}
+
+.onDemandMenu{
+  min-width: 12%;
+}

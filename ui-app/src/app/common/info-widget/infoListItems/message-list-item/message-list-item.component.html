@@ -1,0 +1,16 @@
+<div class="messageListItemWrapper">
+  <div class="itemElements">
+    <div class="roundImage">
+      <app-round-image [image]="messageListItemObj.image"></app-round-image>
+    </div>
+    <div class="content">
+      <span class="assignee">{{messageListItemObj.assignee}}<span class="time"> {{messageListItemObj.overTime.value + ' ' + messageListItemObj.overTime.type + ' ago'}}</span></span>
+      <span class="subject">{{messageListItemObj.subject}}</span>
+      <div class="actions">
+        <i _ngcontent-c11="" class="fa fa-reply actionIcon" (click)="onSendMessageClicked()"></i>
+        <i _ngcontent-c11="" class="fa fa fa-cog actionIcon" (click)="onConfigClicked()"></i>
+      </div>
+    </div>
+  </div>
+
+</div>

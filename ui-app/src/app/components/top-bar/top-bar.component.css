@@ -1,0 +1,72 @@
+.topBarWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.topBarItems{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  align-items: center;
+  justify-content: flex-end;
+  width: 97%;
+  height: 100%;
+}
+
+.openLeftMenu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.openLeftMenu .arrow{
+  padding-right: 5px;
+  color: rgba(85,132,255,0.92);
+}
+
+app-search-component{
+  padding-right: 15px;
+  width: 100%;
+}
+
+.inputButton{
+  border: none;
+  background-color: rgba(85,132,255,0.92);
+  border-radius: 12.5px;
+  height: 25px;
+  padding-right: 20px;
+  padding-left: 20px;
+  color: white;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.dynamicInfo{
+  margin-left: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.dynamicInfo i{
+  cursor: pointer;
+  padding-left: 15px;
+}
+
+
+.userDetails{
+  padding-left: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+.userDetails i {
+  margin-left: 5px;
+}

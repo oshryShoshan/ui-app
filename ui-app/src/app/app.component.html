@@ -1,0 +1,9 @@
+<div class="appComponentWrapper">
+  <div class="onDemandMenu" *ngIf="isOpenMenu">
+    <app-left-menu></app-left-menu>
+  </div>
+  <div class="permanentElements">
+    <app-top-bar (onOpenMenuClickedEvent)="onOpenMenuClicked($event)"></app-top-bar>
+    <app-main-canvas></app-main-canvas>
+  </div>
+</div>
